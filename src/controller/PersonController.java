@@ -29,9 +29,9 @@ public class PersonController {
      * Proof what show only results on screen
      */
     public void executeProof() {
-        System.out.println(this.executeOver21().toString());
-        System.out.println(this.executeUnder18().toString());
-        System.out.println(this.executeOver21WithSSN().toString());
+        System.out.println("executeOver21()\n" + this.executeOver21().toString());
+        System.out.println("executeUnder18()\n" + this.executeUnder18().toString());
+        System.out.println("executeOver21WithSSN()\n" + this.executeOver21WithSSN().toString());
     }
 
     /**
@@ -54,7 +54,7 @@ public class PersonController {
      */
     private List<Person> executeUnder18() {
         return this.personList.stream()
-                .filter(Person -> Person.getAge() < 21)
+                .filter(Person -> Person.getAge() < 18)
                 .collect(Collectors.toList());
     }
 

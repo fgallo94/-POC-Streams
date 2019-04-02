@@ -13,14 +13,21 @@ public class main {
 
     /**
      * Initialize and fill a new List<Person> for the PersonController then call to executeProof().
+     * Added Builder Pattern POC to Person
      */
     public static void main(String[] args) {
 
-        List<Person> personList = Arrays.asList(new Person("Federico", "Gallo", 24, 38056968),
+        Person person1 = new Person.Builder()
+                .withFirstName("Federico")
+                .withLastName("Gallo")
+                .hisAge(24)
+                .andSocialSecurityNumber(38056968)
+                .build();
+        List<Person> personList = Arrays.asList(person1,
                 new Person("Anibal", "Matellan", 20, 42231645),
                 new Person("Guillermo", "Fernandez", 40, 12635172),
                 new Person("Carlos", "Martinez", 15, 46283790),
-                new Person("Fernando", "Suarez", 59, 6052168));
+                new Person("Facundo", "Vega", 29, 6052168));
         PersonController personController = new PersonController(personList);
         personController.executeProof();
     }
