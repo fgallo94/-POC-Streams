@@ -5,7 +5,7 @@ package dto;
  *
  * @author fgallo94
  */
-public class Person {
+public class Person implements Comparable<Person> {
 
     private String firstName;
     private String lastName;
@@ -43,12 +43,21 @@ public class Person {
                 "}\n";
     }
 
+    @Override
+    public int compareTo(Person person1) {
+        return this.getFirstName().compareTo(person1.getFirstName());
+    }
+
     public int getAge() {
         return age;
     }
 
     public long getSsn() {
         return ssn;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
     }
 
     /**

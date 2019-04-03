@@ -2,14 +2,14 @@ import controller.PersonController;
 import dto.Person;
 
 import java.util.List;
-import java.util.Arrays;;
+import java.util.Arrays;
 
 /**
  * First Proof of Concept of Stream by jdk 1.8
  *
  * @author fgallo94
  */
-public class main {
+public class mainClass {
 
     /**
      * Initialize and fill a new List<Person> for the PersonController then call to executeProof().
