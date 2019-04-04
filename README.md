@@ -1,6 +1,9 @@
 # -POC-Streams
 ## Version 1.0.2
 
+## Prerequisites
+- jdk (>=1.8 required)
+
 Version | Changes
 ------------ | -------------
  Version 1.0.2 |Added a new method in PersonController, now Person implements comparable and remove warnings in classes
