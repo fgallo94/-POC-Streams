@@ -4,6 +4,8 @@
 ## Prerequisites
 - jdk (>=1.8 required)
 
+## Changelog
+
 Version | Changes
 ------------ | -------------
  Version 1.0.2 |Added a new method in PersonController, now Person implements comparable and remove warnings in classes
